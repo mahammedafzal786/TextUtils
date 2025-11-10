@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import {
@@ -44,7 +44,7 @@ function App() {
         <Alert alert={alert}/>
         <div className="container my-3">
           <Routes>
-            <Route exact path="/about" element={<About />} />
+            {/* <Route exact path="/about" element={<About />} /> */}
             <Route exact path="/" element={<TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert}/>} />
           </Routes>
         </div>
